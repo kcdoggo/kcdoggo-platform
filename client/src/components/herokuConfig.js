@@ -1,6 +1,5 @@
 import axios from "axios"
 
 export const axiosInstance = axios.create({
-
-  baseURL="https://cdoggo-platform.herokuapp.com/"
+    baseURL = "https://cdoggo-platform.herokuapp.com/api/"
 })
