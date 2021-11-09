@@ -8,7 +8,7 @@ function ImageSlider(props) {
                     {props.images.map((image,index)=>(
                         
                         <div key={index}>
-                            <img style={{width:'100%', maxHeight:'380px', objectFit:'contain'}} src={`http://localhost:5000/${image}`}/>
+                            <img style={{width:'100%', maxHeight:'380px', objectFit:'contain'}} src={`https://cdoggo-platform.herokuapp.com/${image}`}/>
                         
                         
                         
