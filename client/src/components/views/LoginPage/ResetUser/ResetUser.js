@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React,{useState} from 'react'
 import "./LoginPageStyle.css";
-import { axiosInstance } from '../components/herokuConfig';
+import {axiosInstance} from '../../../herokuConfig'
 
 function ResetUser() {
 
