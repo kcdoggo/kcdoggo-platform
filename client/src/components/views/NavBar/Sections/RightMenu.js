@@ -5,7 +5,7 @@ import axios from 'axios';
 import { USER_SERVER } from '../../../Config';
 import { withRouter } from 'react-router-dom';
 import { useSelector } from "react-redux";
-import { axiosInstance } from '../components/herokuConfig';
+import {axiosInstance} from '../../../herokuConfig'
 
 function RightMenu(props) {
 
