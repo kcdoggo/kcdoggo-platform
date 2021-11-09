@@ -1,0 +1,17 @@
+{
+  "name": "cdoggoPlatform",
+  "version": "1.0.0",
+  "description": "Hello, My Friends   Thank you for having interest in this repository !",
+  "main": "index.js",
+  "dependencies": {
+    "nodemailer": "^6.6.5",
+    "react-paypal-express-checkout": "^1.0.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

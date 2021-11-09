@@ -1,0 +1,77 @@
+@import '~antd/dist/antd.css';
+
+.menu {
+  padding: 5px 20px;
+  overflow: auto; /*메뉴 너무 많으면*/
+  background-color: white;
+  margin-bottom: 50px;
+}
+
+.menu__logo {
+  float: left;
+}
+
+
+.menu__logo {
+  
+  margin-top:17px;
+}
+
+
+/*개발자 도구에서 클래스명 찾아야 함.여기는*/
+.ant-menu-item a{
+  margin-top: 12px;
+}
+
+.ant-menu-horizontal {
+  border-bottom: none;
+}
+
+#root > nav > div.menu__container > div.menu_right > ul > li:nth-child(4){
+ padding-bottom: 0px;
+}
+/**메뉴 띄우는 거 **/
+.menu__container .menu_left {
+  float: left;
+}
+
+.menu__container .menu_right {
+  float: right;
+}
+
+.menu__mobile-button {
+  float: right;
+  height: 32px;
+  padding: 6px;
+  margin-top: 8px;
+  display: none !important; /* ant-btn 을 overwrite하기 위해 !important */
+  background: black;
+}
+
+.menu_drawer .ant-drawer-body {
+  padding: 0 !important;
+}
+
+/* align header of Drawer with header of page */
+.menu_drawer .ant-drawer-header {
+  padding: 14px 24px !important;
+}
+
+/**작은 화면일땐, 드로어 버튼 보이게 하고, login,signup 안보이게
+inline일땐, width,hight못주니까, inline-block으로 **/
+@media (max-width: 767px) {
+  .menu__mobile-button {
+    display: inline-block !important;
+    margin-top:17px;
+    border-style: none;
+
+  }
+
+  .menu_left,
+  .menu_right {
+    display: none;
+  }
+  .menu__logo {
+    margin-top:15px;
+  }
+}
