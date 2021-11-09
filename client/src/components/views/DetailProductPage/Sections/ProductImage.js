@@ -12,8 +12,8 @@ function ProductImage(props) {
 
         props.detail.images.map(item => {
             images.push({
-                original: `http://localhost:5000/${item}`,
-                thumbnail: `http://localhost:5000/${item}`,
+                original: `https://cdoggo-platform.herokuapp.com/${item}`,
+                thumbnail: `https://cdoggo-platform.herokuapp.com/${item}`,
                 originalHeight: '500px',
                 originalWidth:'700px'
             })
