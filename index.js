@@ -11,7 +11,7 @@ const cookieParser = require("cookie-parser");
 const config = require("./server/config/key");
 
 const mongoose = require("mongoose");
-const connect = mongoose.connect(config.mongoURI,
+const connect = mongoose.connect('mongodb+srv://cdoggo:tnwlssl6@authentication.wyknj.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
   {
     useNewUrlParser: true, useUnifiedTopology: true,
     useCreateIndex: true, useFindAndModify: false
@@ -30,9 +30,9 @@ app.use(bodyParser.json());
 app.use(cookieParser());
 
 //라우트 경로 
-app.use('/api/users', require('./routes/users'));
-app.use('/api/product', require('./routes/product'));
-app.use('/api/resetUser', require('./routes/resetUser'));
+app.use('/api/users', require('./server/routes/users'));
+app.use('/api/product', require('./server/routes/product'));
+app.use('/api/resetUser', require('./server/routes/resetUser'));
 
 app.post('/api/product/image')
 
