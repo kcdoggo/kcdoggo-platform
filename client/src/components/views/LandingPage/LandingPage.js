@@ -1,6 +1,7 @@
 import React,{useEffect,useState} from 'react'
 import { FaCode, FaFileExcel } from "react-icons/fa";
 import axios from 'axios';
+import { axiosInstance } from '../../herokuConfig';
 import {Col,Row,Card,Carousel} from 'antd';
 import Meta from 'antd/lib/card/Meta'
 import ImageSlider from '../../utils/ImageSlider';
@@ -33,7 +34,7 @@ function LandingPage() {
 
 
     const getProducts = (body) =>{
-        axios.post('/api/product/products',body)
+        axiosInstance.post('/api/product/products',body)
         .then(response=>{
             if(response.data.success){ 
                 if(body.loadMore){
