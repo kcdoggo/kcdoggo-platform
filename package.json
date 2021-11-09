@@ -7,13 +7,13 @@
     "node": "10.16.0",
     "npm": "6.9.0"
   },
-  "scripts": {
-  
+ "scripts": {
+    "start": "node server/index.js",
     "backend": "nodemon server/index.js",
-    
-    "start": "concurrently \"npm run backend\" \"npm run start --prefix client\""
+    "frontend": "npm run start --prefix client",
+    "dev": "concurrently \"npm run backend\" \"npm run start --prefix client\""
   },
-  "author": "",
+  "author": "kcdoggo",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^3.0.6",
