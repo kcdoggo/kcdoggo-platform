@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import { Typography,Form, Input, Button } from 'antd';
 import FileUpload from '../../utils/FileUpload';
 import axios from 'axios';
-import { axiosInstance } from '../components/herokuConfig';
+import {axiosInstance} from '../../herokuConfig'
 
 import "./UploadProductPageStyle.css";
 
