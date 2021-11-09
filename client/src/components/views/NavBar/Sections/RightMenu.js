@@ -5,6 +5,7 @@ import axios from 'axios';
 import { USER_SERVER } from '../../../Config';
 import { withRouter } from 'react-router-dom';
 import { useSelector } from "react-redux";
+import { axiosInstance } from '../components/herokuConfig';
 
 function RightMenu(props) {
 
@@ -13,7 +14,7 @@ function RightMenu(props) {
   const user = useSelector(state => state.user)
 
   const logoutHandler = () => {
-    axios.get(`${USER_SERVER}/logout`).then(response => {
+    axiosInstance.get(`${USER_SERVER}/logout`).then(response => {
       if (response.status === 200) {
         props.history.push("/login");
       } else {
