@@ -37,7 +37,7 @@ router.post(`/findPassword`,(req,res)=>{
         from: EMAIL,
         to: receiverEmail,
         subject: "[cDoGGo] 패스워드 확인바랍니다",
-        html: '<img src="https://blogger.googleusercontent.com/img/a/AVvXsEhjtTAAw4zDvLFYhPee1ZhbU-TaXtJXA6IwmdkBbGj_EkLjxnwpq3BZFsnimypdKe18Q5cjWIbHPfBkDK9PQWgN4NVztFK-xWzWR8KLvg8QlzgIzN0Cfx2X4YqdOfszw7PEMyZgOreZCdA-VnBGuAHldtBEOWljvfsn8yEfEelSDB1ODtYI9K44Pydn=s320" />'+"<br/>안녕하세요, CdoGGo 플랫폼입니다. <br/> 귀하의 임시 비밀번호는"+  Math.floor(Math.random() * 50000000)+" 입니다" 
+        html: '<img src="https://blogger.googleusercontent.com/img/a/AVvXsEhjtTAAw4zDvLFYhPee1ZhbU-TaXtJXA6IwmdkBbGj_EkLjxnwpq3BZFsnimypdKe18Q5cjWIbHPfBkDK9PQWgN4NVztFK-xWzWR8KLvg8QlzgIzN0Cfx2X4YqdOfszw7PEMyZgOreZCdA-VnBGuAHldtBEOWljvfsn8yEfEelSDB1ODtYI9K44Pydn=s320" />'+"<br/>안녕하세요, CdoGGo 플랫폼입니다. <br/> 귀하의 임시 비밀번호는 "+ ps+" 입니다" 
 
         
     };
