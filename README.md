@@ -1,4 +1,3 @@
-To start this application type this 
-npm run dev 
+To start this application type this commmand : npm run dev 
 
 
