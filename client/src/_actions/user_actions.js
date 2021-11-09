@@ -10,11 +10,13 @@ import {
     
 } from './types';
 
+import { axiosInstance } from '../components/herokuConfig';
+
 
 import { USER_SERVER } from '../components/Config.js';
 
 export function registerUser(dataToSubmit){
-    const request = axios.post(`${USER_SERVER}/register`,dataToSubmit)
+    const request = axiosInstance.post(`${USER_SERVER}/register`,dataToSubmit)
         .then(response => response.data);
     
     return {
@@ -24,7 +26,7 @@ export function registerUser(dataToSubmit){
 }
 
 export function loginUser(dataToSubmit){
-    const request = axios.post(`${USER_SERVER}/login`,dataToSubmit)
+    const request = axiosInstance.post(`${USER_SERVER}/login`,dataToSubmit)
                 .then(response => response.data);
 
     return {
@@ -34,7 +36,7 @@ export function loginUser(dataToSubmit){
 }
 
 export function auth(){
-    const request = axios.get(`${USER_SERVER}/auth`)
+    const request = axiosInstance.get(`${USER_SERVER}/auth`)
     .then(response => response.data);
 
     return {
@@ -44,7 +46,7 @@ export function auth(){
 }
 
 export function logoutUser(){
-    const request = axios.get(`${USER_SERVER}/logout`)
+    const request = axiosInstance.get(`${USER_SERVER}/logout`)
     .then(response => response.data);
 
     return {
@@ -58,7 +60,7 @@ export function addToCart(id){
     let body = {
         productId : id 
     }
-    const request = axios.post(`${USER_SERVER}/addToCart`,body)
+    const request = axiosInstance.post(`${USER_SERVER}/addToCart`,body)
     .then(response => response.data);
 
     return {
@@ -69,7 +71,7 @@ export function addToCart(id){
                             //cartItems와 user state에 들어있는 cart 
 export function getCartItems(cartItems, userCart){
 
-    const request = axios.get(`/api/product/products_by_id?id=${cartItems}&type=array`)
+    const request = axiosInstance.get(`/api/product/products_by_id?id=${cartItems}&type=array`)
      .then(response => { 
         //CartItem들의 id에 해당하는 아이템들을, Product Collection에서 가져온 후,
 	    // Quantity정보를 넣어줌.
@@ -98,7 +100,7 @@ export function getCartItems(cartItems, userCart){
 
 export function removeCartItem(productId){
 
-    const request = axios.get(`/api/users/removeFromCart?id=${productId}`)
+    const request = axiosInstance.get(`/api/users/removeFromCart?id=${productId}`)
      .then(response => { 
     
             //productInfo, cart(user collection)조합+하여 CartDetail을 만듦.
