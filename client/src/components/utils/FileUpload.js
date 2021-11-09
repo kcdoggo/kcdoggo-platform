@@ -3,6 +3,7 @@ import axios from 'axios';
 import Dropzone from 'react-dropzone'
 //import {Icon} from 'antd';
 import { FaCloudUploadAlt } from "react-icons/fa";
+import {axiosInstance} from "../herokuConfig";
 
 //여기props는 uploadProduct 부모컴포넌트
 function FileUpload(props) {
@@ -31,7 +32,7 @@ function FileUpload(props) {
 
 
         //axios사용해 파일 전달.보낼서버주소,보낼데이터,보낼형식
-        axios.post('/api/product/image',formData,config)
+        axiosInstance.post('/api/product/image',formData,config)
             .then(response=>{//서버에서 정보전달해주는거then(response)으로 받음.
                 if(response.data.success){
                     console.log(response.data)
