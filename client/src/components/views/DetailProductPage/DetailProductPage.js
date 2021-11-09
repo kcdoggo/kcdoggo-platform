@@ -4,7 +4,7 @@ import ProductImage from './Sections/ProductImage'
 import ProductInfo from './Sections/ProductInfo'
 //반응형 디자인을 위해 antd의 Row,Col을 사용
 import {Row,Col} from 'antd'
-import { axiosInstance } from '../components/herokuConfig';
+import { axiosInstance } from '../../herokuConfig';
 
 function Page(props) {
     
