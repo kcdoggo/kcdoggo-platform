@@ -127,8 +127,8 @@ function LoginPage(props) {
                       LOGIN
                 </Button>
                 </div>
-                  <a href="/register">회원가입 하러가기</a>
-                <a className="login-form-forgot" href="/reset_user" style={{ float: 'right' }}>
+                  <a href="/register" style={{color:'#1890ff'}}>회원가입 하러가기</a>
+                <a className="login-form-forgot" href="/reset_user" style={{ float: 'right',color:'#1890ff' }}>
                   비밀번호 찾기
                   </a>
               </Form.Item>
