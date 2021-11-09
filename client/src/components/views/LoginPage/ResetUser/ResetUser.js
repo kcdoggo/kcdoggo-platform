@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React,{useState} from 'react'
 import "./LoginPageStyle.css";
-
+import { axiosInstance } from '../components/herokuConfig';
 
 function ResetUser() {
 
@@ -15,7 +15,7 @@ function ResetUser() {
 
     const onClickHandler = (event) => {
         event.preventDefault();
-        axios.post(`/api/resetUser/findPassword`, body 
+        axiosInstance.post(`/api/resetUser/findPassword`, body 
         ).then(response=> console.log(response.data))
         alert('이메일을 전송하였습니다')
        
