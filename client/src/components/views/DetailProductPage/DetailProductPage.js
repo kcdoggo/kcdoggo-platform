@@ -4,6 +4,7 @@ import ProductImage from './Sections/ProductImage'
 import ProductInfo from './Sections/ProductInfo'
 //반응형 디자인을 위해 antd의 Row,Col을 사용
 import {Row,Col} from 'antd'
+import { axiosInstance } from '../components/herokuConfig';
 
 function Page(props) {
     
@@ -18,9 +19,9 @@ function Page(props) {
     
 
     useEffect(() => {
-        //axios.get(address,id,type) 이용해서 백서버에서 정보가져옴. 
+        //axiosInstance.get(address,id,type) 이용해서 백서버에서 정보가져옴. 
         //후에 router폴더에서, router.get만들기.
-        axios.get(`/api/product/products_by_id?id=${productId}&type=single`)
+        axiosInstance.get(`/api/product/products_by_id?id=${productId}&type=single`)
         .then(response =>{
             setProduct(response.data[0])
            
@@ -28,7 +29,7 @@ function Page(props) {
         .catch(err=> alert(err))
     }, [])    
 
-    //axios가 request를 아직 가져오지 않았다면, Product가 undefiend일테니, 로딩상태로 null을 줌. 
+    //axiosInstance가 request를 아직 가져오지 않았다면, Product가 undefiend일테니, 로딩상태로 null을 줌. 
     if(!Product){
         return null;{/* loading spinner,blank table도 가능*/}
     }
