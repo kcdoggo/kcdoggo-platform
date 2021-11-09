@@ -16,8 +16,11 @@ function ResetUser() {
     const onClickHandler = (event) => {
         event.preventDefault();
         axiosInstance.post(`/api/resetUser/findPassword`, body 
-        ).then(response=> console.log(response.data))
-        alert('이메일을 전송하였습니다')
+        ).then(response=> console.log(response.data),
+            alert('이메일을 전송하였습니다')   )
+            .catch(error => console.log(error))
+       
+        
        
     }
     return (
