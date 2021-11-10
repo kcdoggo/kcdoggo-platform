@@ -74,10 +74,15 @@ function LoginPage(props) {
         return (
 
 
-          <div className="app" style={{position:'relative'}} >
-            
+    <div className="appLogin" style={{position:'relative'}} >       
+          
             <form className="formStyle" onSubmit={handleSubmit}>
-            <Title style={{textAlign:"center"}} level={2}>로그인</Title>
+               <Row type="flex" align="middle" >
+                <Col offset={2} xs={20} xl={6}  >
+              
+              <Title style={{textAlign:"center"}} level={2}>로그인</Title>
+              <br/>              
+
               {/**antd 의 form 사용 */}
               <Form.Item required>
                 <Input 
@@ -132,7 +137,9 @@ function LoginPage(props) {
                   비밀번호 찾기
                   </a>
               </Form.Item>
+                </Col>
 
+                </Row>
             </form>
           </div>
         );
