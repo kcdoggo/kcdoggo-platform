@@ -1,5 +1,4 @@
 
-
 .appRegister{
     background-image: url("../LoginPage/login.svg");
     background-size:cover;
@@ -11,7 +10,7 @@
 
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1270px) {
 
     .appRegister {
         background-image: none;
@@ -19,23 +18,7 @@
     html{
         overflow: hidden;
     }
+
+
 }
 
-@media (max-width: 815px) {
-
-    .RegisterStyle{
-       width: 350px !important;
-       top: 10px !important;
-      
-     }
-
-   }
-
-   .RegisterStyle{
-    
-       position: absolute;
-       left: 13%;
-       top: 25%;
-       width: 400px;
-        
-}
