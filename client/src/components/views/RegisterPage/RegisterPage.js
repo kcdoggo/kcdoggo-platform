@@ -4,6 +4,7 @@ import { Formik } from 'formik';
 import * as Yup from 'yup';
 import { registerUser } from "../../../_actions/user_actions";
 import { useDispatch } from "react-redux";
+import './RegisterPageStyle.css'
 
 import {
   Form,
@@ -97,8 +98,8 @@ function RegisterPage(props) {
           handleReset,
         } = props;
         return (
-          <div className="app">
-            <Form className="formStyle"style={{ minWidth: '375px',position: 'absolute', left:'10%', top: '24%', width: '330px' }} {...formItemLayout} onSubmit={handleSubmit} >
+          <div className="appRegister">
+            <Form className="RegisterStyle" {...formItemLayout} onSubmit={handleSubmit} >
               <h2 style={{fontWeight:900, textAlign:'center'}}>회원가입</h2>
               <br/>
               <Form.Item required label="이름">
