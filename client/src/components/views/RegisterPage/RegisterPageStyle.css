@@ -18,6 +18,9 @@
     html{
         overflow: hidden;
     }
+#root > div:nth-child(2) > div > div{
+  margin-left: 8%;
+}
 
 
 }
