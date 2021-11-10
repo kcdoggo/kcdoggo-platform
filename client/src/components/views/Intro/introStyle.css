@@ -39,7 +39,7 @@ html, body {
 }
 .component.second-component {
     background-image: url('./secondComponent.svg');
-    background-size: contain;
+    background-size: cover;
     background-repeat:no-repeat;
     height: 100vh;
     width:100vw;
