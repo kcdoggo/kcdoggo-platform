@@ -156,6 +156,7 @@ a:hover{
     
     .component{
         padding:0px;
-        margin:0px;
+        margin-left:-36px;
+        
     }
 }
