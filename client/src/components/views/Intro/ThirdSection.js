@@ -11,12 +11,14 @@ export default () => {
       <div className="font-link">
      <div className="main_text">
      
+    
       <div>CdoGGo 플랫폼에서 원하는 가격에 판매하세요 </div>
+     
       <div>혼자 진행하는 중고거래보다 간편합니다 !</div>
       </div></div>
       <div className="font-link-two">
 
-      <Row justify="center" gutter={16}>
+      <Row justify="center">
       <div className="con-wrap">
       <Col xl={8} md={12} xs={24} >
         <div className="container one">
