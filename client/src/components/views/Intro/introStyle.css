@@ -39,11 +39,8 @@ html, body {
 }
 .component.second-component {
     background-image: url('./secondComponent.svg');
-    background-size: cover;
+    background-size: contain;
     background-repeat:no-repeat;
-    height: 100vh;
-    width:100vw;
-     
     
     
 }
@@ -77,6 +74,21 @@ a{
     display: flex;
     flex-direction: row;
     word-break: break-word;
+}
+
+@media (max-width: 1110px) {
+
+    .font-link-two {
+        visibility: hidden;
+    }
+
+    .main_text{
+        font-size: 30px;
+    }
+
+    .btn_third{
+        position: absolute;
+    }
 }
 
 .container {
