@@ -3,7 +3,7 @@ import { withRouter } from "react-router-dom"; //어떤 상태면 특정 컴포�
 import { loginUser } from "../../../_actions/user_actions";
 import { Formik } from 'formik';
 import * as Yup from 'yup';
-import { Form, Icon, Input, Button, Checkbox, Typography } from 'antd';
+import { Form, Icon, Input, Button, Checkbox, Typography ,Row, Col } from 'antd';
 import { useDispatch } from "react-redux";
 import "./LoginPageStyle.css";
 
