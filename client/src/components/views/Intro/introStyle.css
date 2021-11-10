@@ -76,18 +76,7 @@ a{
     word-break: break-word;
 }
 
-@media (max-width: 1110px) {
 
-    .font-link-two {
-        visibility: hidden;
-    }
-
-    .main_text{
-        font-size: 30px;
-    }
-
-  
-}
 
 .container {
     background: #406AFF;
