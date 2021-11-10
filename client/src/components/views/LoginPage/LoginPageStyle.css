@@ -9,10 +9,30 @@
 
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
 
     .app {
-  background-image: none;
+        background-image: none;
+}
+html{
+  overflow: hidden;
 }
 
+}
+
+@media (max-width: 815px) {
+ .formStyle{
+    width: 280px !important;
+
+
+  }
+ 
+
+}
+
+.formStyle{
+  max-width: 400px;
+  position: absolute;
+   left:13%;
+   top: 25% ;
 }
