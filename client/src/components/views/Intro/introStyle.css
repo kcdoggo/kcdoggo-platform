@@ -138,3 +138,24 @@ h2 {
 a:hover{
     color:white;
 }
+
+
+@media (max-width: 1110px) {
+
+    .font-link-two {
+        visibility: hidden;
+    }
+
+    .main_text{
+        font-size: 30px;
+    }
+
+    .btn_third{
+        position: absolute;
+    }
+    
+    .component{
+        padding:0px;
+        margin:0px;
+    }
+}
