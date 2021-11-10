@@ -10,6 +10,8 @@ import {
   Form,
   Input,
   Button,
+  Col,
+  Row
 } from 'antd';
 
 const formItemLayout = {
