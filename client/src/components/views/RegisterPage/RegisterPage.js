@@ -98,8 +98,12 @@ function RegisterPage(props) {
           handleReset,
         } = props;
         return (
-          <div className="appRegister">
+           <div className="appRegister">
+            <Row type="flex" align="middle" >
+              <Col offset={3} xs={15} xl={6}  >
+            
             <Form className="RegisterStyle" {...formItemLayout} onSubmit={handleSubmit} >
+            
               <h2 style={{fontWeight:900, textAlign:'center'}}>회원가입</h2>
               <br/>
               <Form.Item required label="이름">
@@ -172,11 +176,14 @@ function RegisterPage(props) {
               </Form.Item>
 
               <Form.Item {...tailFormItemLayout}>
-                <Button onClick={handleSubmit} type="primary" disabled={isSubmitting}>
+                <Button onClick={handleSubmit}  style={{width:'100%', backgroundColor:'#09d693',fontWeight:800,borderStyle:'none'}}type="primary" disabled={isSubmitting}>
                   Submit
                 </Button>
               </Form.Item>
             </Form>
+            </Col>
+
+                </Row>
           </div>
         );
       }}
