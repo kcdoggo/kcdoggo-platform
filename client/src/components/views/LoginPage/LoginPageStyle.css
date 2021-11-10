@@ -31,7 +31,7 @@ html{
 }
 
 .formStyle{
-  max-width: 400px;
+  width: 400px;
   position: absolute;
    left:13%;
    top: 25% ;
