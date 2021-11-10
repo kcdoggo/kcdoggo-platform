@@ -9,7 +9,7 @@ export default () => {
   return (
     <div className="component first-component">
         <div className="font-link"style={{fontSize:'3rem',color:'black',
-        display:'flex',alignItems:'center',justifyContent:'center',width:'100vw',height:'100vh',marginTop:'-20px'}}>
+        display:'flex',alignItems:'center',justifyContent:'center',width:'100vw',height:'100vh',marginTop:'-20px',textAlign:'center'}}>
         <Typewriter
              options={{
                 strings: ['CdoGGo에 오신걸 환영합니다','즐거운 쇼핑 되세요 !' ],
