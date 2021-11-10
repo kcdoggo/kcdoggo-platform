@@ -76,7 +76,7 @@ function LoginPage(props) {
 
           <div className="app" style={{position:'relative'}} >
             
-            <form className="formStyle" onSubmit={handleSubmit}  style={{ minWidth: '375px',position: 'absolute', left:'10%', top: '25%', width: '330px' }}>
+            <form className="formStyle" onSubmit={handleSubmit}>
             <Title style={{textAlign:"center"}} level={2}>로그인</Title>
               {/**antd 의 form 사용 */}
               <Form.Item required>
