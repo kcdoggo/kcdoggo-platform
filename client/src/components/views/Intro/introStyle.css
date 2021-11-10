@@ -41,6 +41,9 @@ html, body {
     background-image: url('./secondComponent.svg');
     background-size: contain;
     background-repeat:no-repeat;
+    height: 100vh;
+    width:100vw;
+     
     
     
 }
