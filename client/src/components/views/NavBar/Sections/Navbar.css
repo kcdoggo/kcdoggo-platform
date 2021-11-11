@@ -18,10 +18,7 @@
 }
 
 
-/*개발자 도구에서 클래스명 찾아야 함.여기는*/
-.ant-menu-item a{
-  margin-top: 12px;
-}
+
 
 .ant-menu-horizontal {
   border-bottom: none;
