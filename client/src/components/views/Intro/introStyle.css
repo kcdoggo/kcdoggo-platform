@@ -157,6 +157,9 @@ a:hover{
     .component{
         padding:0px;
         margin-left:-35px;
-        
+        overflow:auto !important;
+    }
+    .ant-form ant-form-horizontal RegisterStyle{
+     padding-bottom: 10px;
     }
 }
