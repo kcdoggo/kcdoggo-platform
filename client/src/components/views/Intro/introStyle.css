@@ -65,9 +65,7 @@ a{
 
 
 .component.second-component {
-    background-image: url('./secondComponent.svg');
-    background-size: contain;
-    background-repeat:no-repeat;
+
     background-color: #F4BF04;
 }
 
