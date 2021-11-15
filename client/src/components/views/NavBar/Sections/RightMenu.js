@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import { Menu, Badge, Avatar, Icon } from 'antd';
 import axios from 'axios';
