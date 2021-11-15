@@ -34,6 +34,11 @@ html, body {
     margin-left:20px;
 }
 
+.perplexed{
+    position:absolute;
+    
+}
+
 .component.first-component {
     position: relative;
 }
