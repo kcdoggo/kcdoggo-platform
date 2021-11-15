@@ -36,7 +36,15 @@ html, body {
 
 .perplexed{
     position:absolute;
+    left:60%;
+    bottom:20%;
     
+}
+
+.questionBox{
+ position:absolute;
+    left:55%;
+    top:40%;
 }
 
 .component.first-component {
