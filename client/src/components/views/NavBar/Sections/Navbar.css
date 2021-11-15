@@ -44,7 +44,7 @@
   padding: 0 !important;
 }
 
-/* align header of Drawer with header of page */
+/* 드로어랑 드로어 페이지 정렬 */
 .menu_drawer .ant-drawer-header {
   padding: 14px 24px !important;
 }
