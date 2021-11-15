@@ -41,10 +41,14 @@ html, body {
     
 }
 
-.questionBox{
+.outter-box-one{
+ position:relative;
+  
+}
+
+.inner-text-one{
  position:absolute;
-    left:55%;
-    top:40%;
+
 }
 
 .component.first-component {
