@@ -26,7 +26,7 @@ export default () => {
        </div>
        
        
-       <img src={perplexed}/>
+       <img src={perplexed} className="perplexed"/>
    
 
 
