@@ -67,6 +67,7 @@ a{
 .component.second-component {
 
     background-color: #F4BF04;
+    position:relative;
 }
 
 .con-wrap{
