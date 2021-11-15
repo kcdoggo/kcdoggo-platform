@@ -43,13 +43,7 @@ html, body {
     right: 20px;
     top: 100px;
 }
-.component.second-component {
-    background-image: url('./secondComponent.svg');
-    background-size: contain;
-    background-repeat:no-repeat;
-    
-    
-}
+
 .component.third-component {
     display: flex;
     justify-content: center;
