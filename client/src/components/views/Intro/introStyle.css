@@ -28,6 +28,10 @@ html, body {
 
 }
 
+.main-text1{
+    font-size:3rem;
+}
+
 .component.first-component {
     position: relative;
 }
