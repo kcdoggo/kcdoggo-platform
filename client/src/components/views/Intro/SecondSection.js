@@ -3,7 +3,11 @@ import questionBox from "./question.png"
 export default () => {
 
   document.body.style.overflow = "hidden"
-
+   /* <img src={questionBox}>
+         <div>기능차감, 구성품 차감</div>
+         <div>액정차감, 외관 차감</div>
+         <div>왜 이렇게 차감이 많아?</div>
+       </img>*/
 
   return (
     <div className="component second-component" >
@@ -15,11 +19,7 @@ export default () => {
           <div style={{color:'white'}}>20만원대로 ?</div>
        </div>
         
-       <img src={questionBox}>
-         <div>기능차감, 구성품 차감</div>
-         <div>액정차감, 외관 차감</div>
-         <div>왜 이렇게 차감이 많아?</div>
-       </img>
+   
 
 
       </div>
