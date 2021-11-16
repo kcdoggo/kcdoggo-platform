@@ -7,7 +7,7 @@ export default () => {
 
 
   return (
-    <div className="component first-component">
+    <div className="Icomponent Ifirst-component">
         <div className="font-link"style={{fontSize:'3rem',color:'black', textAlign:'center',
         display:'flex',alignItems:'center',justifyContent:'center',width:'100vw',height:'100vh',marginTop:'-20px'}}>
         <Typewriter
