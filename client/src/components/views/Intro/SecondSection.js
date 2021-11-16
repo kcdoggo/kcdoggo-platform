@@ -16,7 +16,7 @@ export default () => {
        */
 
   return (
-    <div className="component second-component" >
+    <div className="Icomponent Isecond-component" >
       <div className="font-link" style={{color:'black'}}>
     
        <div className="main-text1">
@@ -25,11 +25,14 @@ export default () => {
           <div style={{color:'white'}}>20만원대로 ?</div>
        </div>
       <div> 
-       <div>
-       <img src={questionBox}/>
+       <div className="box-one">
+       <img src={questionBox} className="questionBox"/>
+       
+       <div className="box-two">
          <div>기능차감, 구성품 차감</div>
          <div>액정차감, 외관 차감</div>
          <div>왜 이렇게 차감이 많아?</div>
+         </div>
        </div>
        
        
