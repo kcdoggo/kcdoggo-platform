@@ -7,7 +7,7 @@ export default () => {
   document.body.style.overflow = "hidden"
 
   return (
-    <div className="component third-component" >
+    <div className="Icomponent Ithird-component" >
       <div className="font-link">
      <div className="main_text">
      
