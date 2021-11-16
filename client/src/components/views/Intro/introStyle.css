@@ -19,7 +19,7 @@ html, body {
     margin-top: 20px;
 }
 
-.component {
+.Icomponent {
     height: 100%;
     width: 100%;
     display: flex;
@@ -51,17 +51,17 @@ html, body {
 
 }
 
-.component.first-component {
+.Icomponent.Ifirst-component {
     position: relative;
 }
 
-.first-component--inside-scroller {
+.Ifirst-component--inside-scroller {
     position: absolute;
     right: 20px;
     top: 100px;
 }
 
-.component.third-component {
+.Icomponent.Ithird-component {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -81,7 +81,7 @@ a{
 }
 
 
-.component.second-component {
+.Icomponent.Isecond-component {
 
     background-color: #F4BF04;
     position:relative;
@@ -148,15 +148,38 @@ h2 {
     margin-bottom: 20px;
 }
 
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
     .pagination-additional-class > li:not(:last-of-type) > a, .pagination-additional-class > li:not(:last-of-type) > span {
         margin-right: 5px;
     }
-}
+}*/
 
 a:hover{
     color:white;
 }
+
+@media (max-width:900px) {
+    .questionBox{
+        visibility: hidden;
+    }
+    .perplexed{
+        visibility: hidden;
+    }
+    .main-text1{
+        font-size: 2.2rem;
+       margin: 50% auto;
+       padding-left: 10px ;
+        
+    }
+    .box-one{visibility: hidden;}
+}
+
+@media(max-width:1919px){
+    .perplexed{
+        left:45%;
+    }
+}
+
 
 
 @media (max-width: 1110px) {
@@ -173,12 +196,27 @@ a:hover{
         position: absolute;
     }
     
-    .component{
+    .Icomponent{
         padding:0px;
-        margin-left:-35px;
-        overflow:auto !important;
     }
     .ant-form ant-form-horizontal RegisterStyle{
      padding-bottom: 10px;
     }
+}
+
+.box-one{
+    position: relative;;
+    width:276px;
+    height:176px;
+    margin-left: 20%;
+}
+.box-two{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    bottom:42%;
+    font-size: 1.2rem;
 }
