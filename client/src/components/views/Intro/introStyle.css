@@ -137,17 +137,6 @@ h2 {
 }
 
 
-/*.demo-page-contain {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    flex-direction: column;
-}*/
-
-/*.demo-page-contain__hint {
-    margin-bottom: 20px;
-}*/
 
 
 a:hover{
@@ -158,9 +147,7 @@ a:hover{
     .questionBox{
         visibility: hidden;
     }
-    .perplexed{
-        visibility: hidden;
-    }
+   
     .main-text1{
         font-size: 2.2rem;
        margin: 50% auto;
@@ -168,12 +155,6 @@ a:hover{
         
     }
     .box-one{visibility: hidden;}
-}
-
-@media(max-width:1919px){
-    .perplexed{
-        left:45%;
-    }
 }
 
 
@@ -185,7 +166,7 @@ a:hover{
     }
 
     .main_text{
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .btn_third{
@@ -193,7 +174,7 @@ a:hover{
     }
     
     .Icomponent{
-        padding:0px;
+    margin-left:-8%;
     }
     .ant-form ant-form-horizontal RegisterStyle{
      padding-bottom: 10px;
