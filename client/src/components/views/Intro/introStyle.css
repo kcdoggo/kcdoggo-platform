@@ -176,6 +176,12 @@ a:hover{
     .Icomponent{
     margin-left:-8%;
     }
+    
+    .Icomponent.Ithird-component{
+    margin-top:40%
+    }
+    
+    
     .ant-form ant-form-horizontal RegisterStyle{
      padding-bottom: 10px;
     }
