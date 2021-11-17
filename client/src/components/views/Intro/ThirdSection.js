@@ -4,7 +4,7 @@ import { Col,Row } from "antd";
 
 export default () => {
   
-  document.body.style.overflow = "hidden"
+  //document.body.style.overflow = "hidden"
 
   return (
     <div className="Icomponent Ithird-component" >
