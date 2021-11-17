@@ -36,7 +36,7 @@ html, body {
 
 .questionBox{
     position:absolute;
-    left:60%;
+    left:calc(100% - 100px);
     bottom:20%;
     
 }
