@@ -1,13 +1,25 @@
 import React from 'react'
 import { useDispatch } from 'react-redux';
 import { Button, Descriptions, Badge } from 'antd';
-import {addToCart} from '../../../../_actions/user_actions'
+import {addToCart} from '../../../../_actions/user_actions';
+import { useSelector } from "react-redux";
+
+
+
 function ProductInfo(props) {
+    
+    const user = useSelector(state => state.user)
+
 
     const dispatch = useDispatch();
     const clickHandler = () => {
-        dispatch(addToCart(props.detail._id))
-        alert('장바구니에 상품이 담겼습니다.')
+        
+       if(user.userData && !user.userData.isAuth){
+            alert('로그인이 필요합니다. \nplease login first')
+        }else{
+            dispatch(addToCart(props.detail._id))
+            alert('장바구니에 상품이 담겼습니다. \nproduct successfully added to cart ')
+        }
     }
 
 
