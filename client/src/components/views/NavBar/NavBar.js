@@ -59,7 +59,7 @@ function NavBar() {
       
       
         <Drawer
-          title="Basic Drawer"
+          title="MENU"
           placement="right"
           className="menu_drawer"
           closable={false}
