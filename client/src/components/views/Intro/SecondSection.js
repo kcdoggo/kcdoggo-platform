@@ -1,6 +1,5 @@
 import React from "react";
-import questionBox from "./question.png";
-import perplexed from "./perplexed.png";
+import questioning from "./questioning.png"
 
 export default () => {
 
@@ -19,7 +18,7 @@ document.body.style.height = "100%";
        </div>
       <div> 
        <div className="box-one">
-       <img src={questionBox} className="questionBox"/>
+       <img src={questioning} className="questionBox"/>
        
        <div className="box-two">
          <div>기능차감, 구성품 차감</div>
@@ -27,9 +26,7 @@ document.body.style.height = "100%";
          <div>왜 이렇게 차감이 많아?</div>
          </div>
        </div>
-       
-       
-       <img src={perplexed} className="perplexed"/>
+
     </div>
 
 
