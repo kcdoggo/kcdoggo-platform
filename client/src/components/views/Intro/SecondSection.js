@@ -5,7 +5,8 @@ import perplexed from "./perplexed.png";
 export default () => {
 
   document.body.style.overflow = "hidden"
-  
+  document.body.style.width = "100%";
+document.body.style.height = "100%";
 
   return (
     <div className="Icomponent Isecond-component" >
