@@ -187,3 +187,10 @@ a:hover{
     }
 }
 
+
+@media(max-width:1919px){
+
+    .questionBox{
+        width: 770px;
+    }
+}
