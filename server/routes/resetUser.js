@@ -17,8 +17,8 @@ router.post(`/findPassword`,(req,res)=>{
             const ps = userInfo.password
  
     // 본인 Gmail 계정
-    const EMAIL = "cdoggokk@gmail.com";
-    const EMAIL_PW = "Aa8135406@";
+    const EMAIL = "user@gmail.com";
+    const EMAIL_PW = "password";
 
     // 이메일 수신자
     let receiverEmail = Email;
