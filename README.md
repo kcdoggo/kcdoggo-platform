@@ -1,5 +1,7 @@
+# React + Node.js + Mongo DB Ecommerce project
 
-- Deployed web (using heroku)
+
+- Deployed web (with heroku)
 https://cdoggo-platform.herokuapp.com/
 
 
