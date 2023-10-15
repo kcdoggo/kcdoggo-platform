@@ -1,4 +1,4 @@
-# React + Node.js + Mongo DB Ecommerce project
+# React + Node.js + Mongo DB Ecommerce Project
 
 
 - Deployed web (With Heroku)
